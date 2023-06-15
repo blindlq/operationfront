@@ -1,0 +1,23 @@
+{
+  "id": "4103479",
+  "name": "运营管理",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "后台运营管理icon",
+  "glyphs": [
+    {
+      "icon_id": "183540",
+      "name": "登陆",
+      "font_class": "denglu",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "9466910",
+      "name": "登陆密码",
+      "font_class": "denglumima",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    }
+  ]
+}
