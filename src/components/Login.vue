@@ -34,7 +34,7 @@
                     ],
                     password: [
                         { required: true, message: '请输入密码', trigger: 'blur' },
-                        { min: 6, max: 20, message: '长度在 6 - 20 个字符', trigger: 'blur' }
+                        { min: 5, max: 20, message: '长度在 5 - 20 个字符', trigger: 'blur' }
                     ],
                 },
             }
@@ -47,7 +47,7 @@
                 this.$refs.loginFormRef.validate(async valid => {
                     if ( !valid ) return;
                     const {data:res} = await this.$http.post("login",this.loginForm)
-                    if ( res == "FUCK") {
+                    if ( res.code == "200") {
                         this.$message.success("操作成功");
                         this.$router.push({path:"/home"});
                     } else {
